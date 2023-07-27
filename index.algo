@@ -1,0 +1,37 @@
+ALGORITHM algorithm_name
+VAR
+    set_declarations
+    nc,nv,nm,i:INTEGER;
+    c:STRING;
+     nc:=0;
+    nm:=1;
+    nv=0;
+    i=0;
+BEGIN
+    set_instructions
+   
+    read(c[i])
+    WHILE (c[i]#".") DO
+        nc=nc+1;
+        IF (c[i]#" ") THEN
+            set_instructions
+            nm=nm+1;
+        END_IF
+        IF (a[i]in[a,e,y,o,i,u,A,E,Y,O,I,U]) THEN
+            nv=nv+1;
+        END_IF
+        read(a[i+1])
+        i++;
+    END_WHILE
+    IF (c[0]=" " )
+    nm=nm-1;
+    END_IF
+    if (c[length-2]=" ")
+    nm=nm-1;
+    END_IF
+    
+
+   write ("the length of sentence "nc)
+    write ("the number of words"nm)
+   write ("number of vowels"nv)
+END
